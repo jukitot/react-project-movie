@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import {getMovieDetails} from "../api";
 import css from "../MovieList/Movie.module.css";
+import {StarRating} from "../StarRating/StarRating";
 
 const MovieCardInfo = () => {
     const {movieId} = useParams();
@@ -33,7 +34,7 @@ const MovieCardInfo = () => {
                 <p>Release Date: {movie.release_date}</p>
                 <p>Status: {movie.status}</p>
             </div>
-
+            <StarRating movieId={movie.id} />
 
         </div>
     );
