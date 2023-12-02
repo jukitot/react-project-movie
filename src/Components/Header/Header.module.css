@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+
+}
+.Header{
+    display: flex;
+    height: 50px;
+    background-color: rgba(127, 114, 114, 0.3);
+    color: black;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Logo{
+
+    height: 70%;
+}
+
+.Logo_box{
+
+    background-color: lightcyan;
+    border-radius: 15px;
+    height: 70%;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Logo_box:hover{
+    color: #b96060;
+}
+
+
+.User_Box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Avatar{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #b96060;
+    margin-left: 10px;
+}
+
+.Search input{
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    color: #b96060;
+}
+
+
+
+.Search button{
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.Search button:hover{
+    color: #b96060;
+    cursor: pointer;
+}

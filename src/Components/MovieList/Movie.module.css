@@ -1,0 +1,49 @@
+.Image{
+    height:40vh;
+    border: solid 1px #b96060;
+    border-radius: 15px;
+    transition: 1s;
+    display: block;
+    overflow: hidden;
+}
+.Image:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.Container{
+    height: 100%;
+    width: 150px;
+}
+.Title{
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.Title:hover{
+    color: #b96060;
+}
+.Overview{
+    width: 50%;
+}
+.Block_Card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Image_Card {
+    height:60vh;
+    border: solid 1px #b96060;
+    border-radius: 15px;
+}
+.Title_Card{
+    color: #b96060;
+    text-align: center;
+}
+
+.Info{
+    width: 50%;
+    margin-left: 50px;
+}
+.Info h4{
+    color: #b96060;
+}

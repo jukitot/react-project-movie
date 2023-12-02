@@ -1,0 +1,23 @@
+.MovieList{
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.Item{
+
+    margin-top: 10px ;
+    height: 100px;
+    width: 100px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+.Title{
+    text-align: center;
+    margin: 20px;
+    color: #b96060;
+}
