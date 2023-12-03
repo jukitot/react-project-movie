@@ -19,26 +19,31 @@ const MovieCardInfo = () => {
     if (!movie) {
         return <p>Loading...</p>;
     }
-
     return (
         <div>
             <h1 className={css.Title_Card}>{movie.title}</h1>
             <div className={css.Block_Card}>
                 <p className={css.Overview}>{movie.overview}</p>
-                <img className={css.Image_Card} src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`} alt={movie.title}/>
+
+                {movie.poster_path ?(
+                    <img className={css.Image_Card} src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`} alt={movie.title}/>
+                ):(
+
+                    <img className={css.Image_Error_Card} src="/image/no-photo.png" alt=""/>
+                )
+                }
 
             </div>
             <div className={css.Info}>
                 <h4>Info: </h4>
-                <p>Original Language: {movie.original_language}</p>
-                <p>Release Date: {movie.release_date}</p>
-                <p>Status: {movie.status}</p>
+                <p><b>Original Language:</b> {movie.original_language}</p>
+                <p><b>Release Date:</b> {movie.release_date}</p>
+                <p><b>Status:</b> {movie.status}</p>
+                <StarRating movieId={movie.id} />
             </div>
-            <StarRating movieId={movie.id} />
 
         </div>
     );
 };
-
 
 export {MovieCardInfo};
