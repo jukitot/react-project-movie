@@ -15,10 +15,10 @@ export const getGenres = async () => {
 };
 
 
-export const getPopularMovies = async () => {
+export const getPopularMovies = async (page = 1) => {
     try {
         const response = await axios.get(
-            `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`
+            `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=${page}`
         );
         return response.data.results;
     } catch (error) {
@@ -28,10 +28,10 @@ export const getPopularMovies = async () => {
 };
 
 
-export const getMoviesByGenre = async (genreId) => {
+export const getMoviesByGenre = async (genreId, page) => {
     try {
         const response = await axios.get(
-            `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genreId}`
+            `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genreId}&page=${page}`
         );
         return response.data.results;
     } catch (error) {
