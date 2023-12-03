@@ -5,6 +5,7 @@
     transition: 1s;
     display: block;
     overflow: hidden;
+    margin-top: 15px;
 }
 .Image:hover{
     cursor: pointer;
@@ -12,17 +13,21 @@
 }
 
 .Container{
+
     height: 100%;
     width: 150px;
 }
 .Title{
-    margin-bottom: 15px;
+    margin-right: 10px;
     cursor: pointer;
 }
 .Title:hover{
     color: #b96060;
 }
 .Overview{
+    background-color: rgba(185, 96, 96, 0.3);
+    padding: 20px;
+    border-radius: 15px;
     width: 50%;
 }
 .Block_Card{
@@ -31,19 +36,44 @@
     justify-content: space-around;
 }
 .Image_Card {
+
     height:60vh;
     border: solid 1px #b96060;
     border-radius: 15px;
 }
 .Title_Card{
+    margin-top: 20px;
     color: #b96060;
     text-align: center;
 }
 
 .Info{
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(237, 195, 195, 0.31);
     width: 50%;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 .Info h4{
     color: #b96060;
+}
+.Image_Error{
+    height:30vh;
+    border: solid 1px #b96060;
+    border-radius: 15px;
+    transition: 1s;
+    display: block;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.Image_Error_Card{
+    margin-bottom: 50px;
+    height:40vh;
+    border: solid 1px #b96060;
+    border-radius: 15px;
+    transition: 1s;
+    display: block;
+    overflow: hidden;
+    margin-top: 15px;
 }
