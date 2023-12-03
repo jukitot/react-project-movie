@@ -15,11 +15,19 @@ const Movie = ({movie, movieId}) => {
     const {poster_path, title, genreId, vote_average} = movie
     return (
         <div className={css.Container}>
-            <img onClick={getMovieCard} className={css.Image} src={`https://image.tmdb.org/t/p/w300${poster_path}`} alt={title}/>
+            {poster_path ?(
+                    <img onClick={getMovieCard} className={css.Image} src={`https://image.tmdb.org/t/p/w300${poster_path}`} alt={title}/>
+
+            ):(
+
+                <img onClick={getMovieCard} className={css.Image_Error} src="/image/no-photo.png" alt=""/>
+            )
+            }
             <p onClick={getMovieCard} className={css.Title}>{title}</p>
-            <p>{movie.vote_average}</p>
+
 
             <StarRating movieId={movie.id} />
+
 
         </div>
     );
